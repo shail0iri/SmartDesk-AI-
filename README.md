@@ -62,3 +62,36 @@ graph TD
     style E fill:#fce4ec
     style F fill:#bbdefb
 
+The project covers the full ML lifecycle:
+✔️ Data generation & preprocessing
+✔️ Exploratory data analysis (EDA) & visualization
+✔️ Model training & benchmarking with multiple classifiers
+✔️ Saving best models for each task
+✔️ Deployment via FastAPI + Docker
+✔️ Hosting on Render (Free Tier) for live demo
+
+🛠️ Tech Stack
+
+Python (Data + ML)
+
+Scikit-learn, XGBoost, CatBoost (Modeling)
+
+Pandas, Matplotlib, Seaborn (EDA & Visualization)
+
+FastAPI (Deployment API)
+
+Docker (Containerization)
+
+Render (Cloud Hosting)
+
+✨ Key Highlights for Recruiters
+
+✅ Complete end-to-end ML lifecycle (data → deployment)
+
+✅ Multiple models benchmarked, best selected for each task
+
+✅ Misclassification analysis for error insights
+
+✅ Production-ready API with Docker & FastAPI
+
+✅ Deployed live on Render for instant demo
