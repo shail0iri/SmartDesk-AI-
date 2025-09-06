@@ -13,7 +13,8 @@ Scalability issues: Difficult to handle large volumes of tickets
 
 Delayed insights: Slow response to emerging issues
 
- Technical Solution - 
+Technical Solution -
+
 Built an automated AI pipeline that:
 
 Generates realistic synthetic data using local LLMs
