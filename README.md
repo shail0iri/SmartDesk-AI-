@@ -39,11 +39,26 @@ Runs entirely locally with no cloud costs
 ⚡ Production Ready: Dockerized deployment and REST API endpoints
 
 
-```mermaid
 graph TD
-    A[Data Generation] --> B[LLM Analysis]
-    B --> C[Data Processing]
-    C --> D[Visualization]
-    D --> E[Business Insights]
-    E --> F[Decision Support]
+    A[📝 Data Generation] --> B[🤖 LLM Analysis]
+    B --> C[🔄 Data Processing]
+    C --> D[📈 Visualization]
+    D --> E[💡 Business Insights]
+    E --> F[🎯 Decision Support]
+    
+    subgraph "Technical Stack"
+        B --> O[Ollama]
+        O --> DS[DeepSeek R1 8B]
+        C --> P[Pandas]
+        D --> M[Matplotlib]
+        D --> S[Seaborn]
+        F --> FA[FastAPI]
+    end
+    
+    style A fill:#e1f5fe
+    style B fill:#f3e5f5
+    style C fill:#e8f5e8
+    style D fill:#fff3e0
+    style E fill:#fce4ec
+    style F fill:#bbdefb
 
