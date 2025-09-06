@@ -1,0 +1,14 @@
+                    precision    recall  f1-score   support
+
+Account Management       0.67      0.06      0.11        33
+           Billing       0.88      0.38      0.53        37
+        Bug Report       0.67      0.06      0.11        32
+   Feature Request       0.00      0.00      0.00        17
+       Login Issue       0.00      0.00      0.00        25
+             Other       0.00      0.00      0.00        10
+     Payment Issue       0.00      0.00      0.00        16
+   Technical Issue       0.27      1.00      0.43        56
+
+          accuracy                           0.33       226
+         macro avg       0.31      0.19      0.15       226
+      weighted avg       0.40      0.33      0.23       226
