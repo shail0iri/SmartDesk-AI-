@@ -39,8 +39,6 @@ Runs entirely locally with no cloud costs
 ⚡ Production Ready: Dockerized deployment and REST API endpoints
 
 
-## Project Workflow
-
 ```mermaid
 graph TD
     A[Data Generation] --> B[LLM Analysis]
