@@ -1,6 +1,22 @@
-requests==2.31.0
+# Web framework
+Flask==2.3.3
+gunicorn==21.2.0   # Needed for production on Render
+
+# Data processing
 pandas==2.0.3
 numpy==1.24.3
+
+# Visualization
 matplotlib==3.7.1
 seaborn==0.12.2
+
+# HTTP requests (if your app calls APIs later)
+requests==2.31.0
+
+# Date/time utilities
+python-dateutil==2.9.0.post0
+pytz==2025.2
+tzdata==2025.2
+
+# Packaging & dependencies
 setuptools==70.0.0
