@@ -5,7 +5,7 @@ WORKDIR /app
 # Install system dependencies (needed for pandas/matplotlib)
 RUN apt-get update && apt-get install -y \
     build-essential \
-    libatlas-base-dev \
+    libatlas3-base \
     libfreetype6-dev \
     libpng-dev \
     && rm -rf /var/lib/apt/lists/*
