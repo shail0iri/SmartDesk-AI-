@@ -17,7 +17,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy app files
 COPY . .
 
-EXPOSE 8000
+# Use Render's PORT environment variable (free tier uses 10000)
+ENV PORT=10000
+EXPOSE $PORT
 
-# Run with Gunicorn (production server for Flask)
-CMD ["gunicorn", "app:app", "--bind", "0.0.0.0:8000"]
+# Run with Gunicorn using the PORT environment variable
+CMD ["gunicorn", "app:app", "--bind", "0.0.0.0:$PORT"]
