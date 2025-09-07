@@ -2,7 +2,7 @@ FROM python:3.9-slim
 
 WORKDIR /app
 
-# Install system dependencies (needed for pandas/matplotlib)
+# Install system dependencies
 RUN apt-get update && apt-get install -y \
     build-essential \
     libatlas3-base \
@@ -17,9 +17,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy app files
 COPY . .
 
-# Use Render's PORT environment variable (free tier uses 10000)
-ENV PORT=10000
-EXPOSE $PORT
+# Use port 10000 for Render
+EXPOSE 10000
 
-# Run with Gunicorn using the PORT environment variable
-CMD gunicorn app:app --bind 0.0.0.0:$PORT
+# ✅ FIXED: Use hardcoded port 10000 instead of $PORT variable
+CMD ["gunicorn", "app:app", "--bind", "0.0.0.0:10000"]
