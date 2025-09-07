@@ -22,4 +22,4 @@ ENV PORT=10000
 EXPOSE $PORT
 
 # Run with Gunicorn using the PORT environment variable
-CMD ["gunicorn", "app:app", "--bind", "0.0.0.0:$PORT"]
+CMD gunicorn app:app --bind 0.0.0.0:$PORT
