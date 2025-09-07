@@ -86,6 +86,6 @@ def get_data():
 def health_check():
     return jsonify({'status': 'healthy', 'timestamp': datetime.now().isoformat()})
 
-if __name__ == '__main__':
-    port = int(os.environ.get('PORT', 8000))  # Use Render's PORT or default to 8000
-    app.run(host='0.0.0.0', port=port, debug=False)
+#if __name__ == '__main__':
+    #port = int(os.environ.get('PORT', 8000))  # Use Render's PORT or default to 8000
+    #app.run(host='0.0.0.0', port=port, debug=False)
