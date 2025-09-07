@@ -5,3 +5,9 @@ matplotlib==3.7.2
 seaborn==0.12.2
 python-dotenv==1.0.0
 jupyter==1.0.0
+fastapi
+uvicorn
+scikit-learn
+joblib
+xgboost
+catboost
