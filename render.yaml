@@ -3,8 +3,10 @@ services:
     name: smartdesk-ai
     env: python
     plan: free
-    buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT
+    buildCommand: docker build -t smartdesk-ai .
+    startCommand: docker run -p 10000:10000 -e PORT=10000 smartdesk-ai
     envVars:
       - key: FLASK_ENV
         value: production
+      - key: PORT
+        value: 10000
