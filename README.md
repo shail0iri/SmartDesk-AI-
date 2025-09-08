@@ -150,3 +150,32 @@ Urgency → Logistic Regression
 Category → XGBoost
 
 F1 Scores: 0.82 – 0.91 across tasks
+## 📊 Reports & Insights
+
+### Sentiment Analysis
+![Sentiment Distribution](reports/sentiment/sentiment_distribution.png)
+Summary: 60% Negative, 20% Positive, 20% Neutral
+
+### Urgency Analysis
+![Urgency Distribution](reports/urgency/urgency_distribution.png)
+Balanced across Low, Medium, High
+
+### Category Analysis
+![Category Distribution](reports/category/category_distribution.png)
+
+### Sample Ticket Predictions
+| Ticket ID | Sentiment | Urgency | Category |
+|-----------|-----------|---------|----------|
+| 001       | Negative  | High    | Billing  |
+| 002       | Positive  | Low     | Tech     |
+| 003       | Neutral   | Medium  | Support  |
+
+### Full Reports
+- [Sentiment Report](reports/sentiment/sentiment_report.txt)  
+- [Urgency Report](reports/urgency/urgency_report.txt)  
+- [Category Report](reports/category/category_report.txt)  
+- [Benchmark Results](benchmark_results.csv)
+
+
+
+
