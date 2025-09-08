@@ -165,8 +165,8 @@ Balanced across Low, Medium, High
 | 003       | Neutral   | Medium  | Support  |
 
 ### Full Reports
-- [Sentiment Report](reports/sentiment/sentiment_report.txt)  
-- [Urgency Report](reports/urgency/urgency_report.txt)  
+- [Sentiment Report](reports/sentiment)  
+- [Urgency Report](reports/urgency)  
 - [Category Report](reports/category)  
 - [Benchmark Results](Models/benchmark_results.csv)
 
