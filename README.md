@@ -152,7 +152,7 @@ F1 Scores: 0.82 – 0.91 across tasks
 Summary: 60% Negative, 20% Positive, 20% Neutral
 
 ### Urgency Analysis
-![Urgency Distribution](reports/urgency/urgency_distribution.png)
+![Urgency Distribution](reports/urgency/urgency_LogReg_cm.png)
 Balanced across Low, Medium, High
 
 ### Category Analysis
