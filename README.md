@@ -1,5 +1,6 @@
-SmartDesk AI: Intelligent Ticket Classification System
+SmartDesk AI – Intelligent Customer Support Ticket Analysis
 
+📌 Overview -
 An End-to-End AI + Data pipeline for automated customer support ticket analysis, sentiment classification, and business intelligence reporting. It simulates real-world ML engineering skills beyond just training models. This project demonstrates full-stack data science skills with local LLM integration.
 
 🎯 Business Problem - 
@@ -25,6 +26,19 @@ Provides actionable insights through visualizations and reports
 
 Runs entirely locally with no cloud costs
 
+This project demonstrates:
+
+🧹 Data Cleaning & Preprocessing
+
+🤖 Multi-task ML Models for Sentiment, Urgency, and Category classification
+
+📊 Benchmarking across 6 ML algorithms (LogReg, Naive Bayes, RandomForest, SVM, XGBoost, CatBoost)
+
+⚠️ Misclassification tracking for model improvement
+
+🌐 Interactive Flask Dashboard for visualization
+
+🐳 Dockerized Deployment on Render Cloud
 
 🌟 Featured Highlights
 
@@ -38,60 +52,81 @@ Runs entirely locally with no cloud costs
 
 ⚡ Production Ready: Dockerized deployment and REST API endpoints
 
-
-graph TD
-    A[📝 Data Generation] --> B[🤖 LLM Analysis]
-    B --> C[🔄 Data Processing]
-    C --> D[📈 Visualization]
-    D --> E[💡 Business Insights]
-    E --> F[🎯 Decision Support]
-    
-    subgraph "Technical Stack"
-        B --> O[Ollama]
-        O --> DS[DeepSeek R1 8B]
-        C --> P[Pandas]
-        D --> M[Matplotlib]
-        D --> S[Seaborn]
-        F --> FA[FastAPI]
-    end
-    
-    style A fill:#e1f5fe
-    style B fill:#f3e5f5
-    style C fill:#e8f5e8
-    style D fill:#fff3e0
-    style E fill:#fce4ec
-    style F fill:#bbdefb
-
-The project covers the full ML lifecycle:
-✔️ Data generation & preprocessing
-✔️ Exploratory data analysis (EDA) & visualization
-✔️ Model training & benchmarking with multiple classifiers
-✔️ Saving best models for each task
-✔️ Deployment via FastAPI + Docker
-✔️ Hosting on Render (Free Tier) for live demo
-
 🛠️ Tech Stack
 
-Python (Data + ML)
+Languages: Python 3.9
 
-Scikit-learn, XGBoost, CatBoost (Modeling)
+Libraries: Pandas, NumPy, Scikit-learn, XGBoost, CatBoost, Matplotlib, Seaborn
 
-Pandas, Matplotlib, Seaborn (EDA & Visualization)
+Frameworks: Flask, Gunicorn
 
-FastAPI (Deployment API)
+Deployment: Docker, Render (Free Tier)
 
-Docker (Containerization)
+📂 Project Structure
+SmartDesk-AI/
+├── app.py                  # Flask web app (dashboard + API)
+├── analyzed_tickets.csv    # Processed dataset
+├── models/                 # Saved best ML models (joblib)
+│   ├── sentiment_best.joblib
+│   ├── urgency_best.joblib
+│   └── category_best.joblib
+├── figures/                # Benchmark visualizations + confusion matrices
+│   ├── benchmark_f1_scores.png
+│   ├── sentiment_LogReg_cm.png
+│   └── ...
+├── templates/
+│   └── index.html          # Dashboard UI
+├── requirements.txt        # Python dependencies
+├── Dockerfile              # Container setup for deployment
+├── evaluation_report.md    # Benchmarking report
+├── benchmark_results.csv   # Tabular benchmark results
+└── README.md               # Project documentation
 
-Render (Cloud Hosting)
+⚙️ Setup & Usage
+🔹 Run Locally
+# Clone repo
+git clone https://github.com/shail0iri/SmartDesk-AI-.git
+cd SmartDesk-AI-
 
-✨ Key Highlights for Recruiters
+# Install dependencies
+pip install -r requirements.txt
 
-✅ Complete end-to-end ML lifecycle (data → deployment)
+# Run Flask app
+python app.py
 
-✅ Multiple models benchmarked, best selected for each task
+Access dashboard at 👉 http://127.0.0.1:5000
 
-✅ Misclassification analysis for error insights
+🔹 Run with Docker
+# Build image
+docker build -t smartdesk-ai .
 
-✅ Production-ready API with Docker & FastAPI
+# Run container
+docker run -p 8000:8000 smartdesk-ai
 
-✅ Deployed live on Render for instant demo
+Access at 👉 http://localhost:8000
+
+🔹 Deployment on Render
+
+Repo connected to Render
+
+Start command:
+
+gunicorn app:app --bind 0.0.0.0:$PORT
+
+Dockerfile handles dependencies + deployment.
+
+📊 Results & Insights
+
+Sentiment Distribution: 60% Negative, 20% Positive, 20% Neutral
+
+Urgency Distribution: Balanced across Low, Medium, High
+
+Best Models:
+
+Sentiment → CatBoost
+
+Urgency → Logistic Regression
+
+Category → XGBoost
+
+F1 Scores: 0.82 – 0.91 across tasks
