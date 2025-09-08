@@ -40,6 +40,23 @@ This project demonstrates:
 
 🐳 Dockerized Deployment on Render Cloud
 
+📊 End-to-End Architecture
+
+This diagram illustrates the full flow of the project:
+
+Ticket Generation → Simulated customer support tickets.
+
+AI Analysis → Sentiment, urgency, and category classification.
+
+Data Processing → Cleaning and structuring via Pandas.
+
+Modeling → Using Ollama + DeepSeek R1 8B for intelligent analysis.
+
+Visualization → Insights generated with Matplotlib and Seaborn.
+
+Business Insights → Decision Making → Actionable outcomes for support teams.
+figures/deepseek_mermaid_20250908_6ce0db.png
+
 🌟 Featured Highlights
 
 🚀 Local AI Processing: Uses DeepSeek R1 8B via Ollama - no API costs!
