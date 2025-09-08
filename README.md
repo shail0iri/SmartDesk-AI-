@@ -1,30 +1,24 @@
-SmartDesk AI – Intelligent Customer Support Ticket Analysis
+# SmartDesk AI – Intelligent Customer Support Ticket Analysis
 
-📌 Overview -
-An End-to-End AI + Data pipeline for automated customer support ticket analysis, sentiment classification, and business intelligence reporting. It simulates real-world ML engineering skills beyond just training models. This project demonstrates full-stack data science skills with local LLM integration.
+📌 **Overview**  
+SmartDesk-AI is an end-to-end AI + Data pipeline for automated customer support ticket analysis, sentiment classification, and business intelligence reporting.  
+It demonstrates full-stack data science skills with local LLM integration.
 
-🎯 Business Problem - 
-Manual customer support ticket analysis is:
+---
 
-Time-consuming: Hours spent reading and categorizing tickets
+## 🎯 Business Problem
+Manual ticket analysis is time-consuming, inconsistent, and hard to scale.  
+SmartDesk AI automates analysis for **sentiment**, **urgency**, and **category**, providing actionable insights locally.
 
-Inconsistent: Human analysts may categorize tickets differently
+---
 
-Scalability issues: Difficult to handle large volumes of tickets
+## 🛠️ Technical Solution
+- Generates synthetic tickets using local LLMs  
+- Classifies tickets automatically (sentiment, urgency, category)  
+- Generates visualizations and reports  
+- Runs entirely locally  
 
-Delayed insights: Slow response to emerging issues
-
-Technical Solution -
-
-Built an automated AI pipeline that:
-
-Generates realistic synthetic data using local LLMs
-
-Automatically classifies tickets by sentiment, urgency, and category
-
-Provides actionable insights through visualizations and reports
-
-Runs entirely locally with no cloud costs
+---
 
 This project demonstrates:
 
