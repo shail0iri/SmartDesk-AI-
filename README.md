@@ -55,7 +55,7 @@ Modeling → Using Ollama + DeepSeek R1 8B for intelligent analysis.
 Visualization → Insights generated with Matplotlib and Seaborn.
 
 Business Insights → Decision Making → Actionable outcomes for support teams.
-figures/deepseek_mermaid_20250908_6ce0db.png
+(figures/architecture.png)
 
 🌟 Featured Highlights
 
