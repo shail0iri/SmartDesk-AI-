@@ -60,7 +60,7 @@ Manual ticket analysis is:
 - [Category Report – XGBoost](reports/category/category_XGBoost_report.txt)
 - [Benchmark Results](Models/benchmark_results.csv)
 
-This project demonstrates:
+#This project demonstrates:
 
 🧹 Data Cleaning & Preprocessing
 
@@ -74,7 +74,7 @@ This project demonstrates:
 
 🐳 Dockerized Deployment on Render Cloud
 
-📊 End-to-End Architecture
+#📊 End-to-End Architecture
 
 This diagram illustrates the full flow of the project:
 
@@ -94,7 +94,7 @@ Business Insights → Decision Making → Actionable outcomes for support teams.
 ![SmartDesk AI Architecture](figures/architecture.png)
 
 
-🌟 Featured Highlights
+#🌟 Featured Highlights
 
 🚀 Local AI Processing: Uses DeepSeek R1 8B via Ollama - no API costs!
 
