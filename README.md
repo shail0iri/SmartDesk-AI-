@@ -3,23 +3,44 @@
 📌 **Overview**  
 SmartDesk-AI is an end-to-end AI + Data pipeline for automated customer support ticket analysis, sentiment classification, and business intelligence reporting.  
 It demonstrates full-stack data science skills with local LLM integration.
-Access the live dashboard [here](https://smartdesk-ai.onrender.com/).
+
+
+🔗 **Live Demo:** [SmartDesk AI Dashboard](https://smartdesk-ai.onrender.com/)
 
 ---
 
 ## 🎯 Business Problem
-Manual ticket analysis is time-consuming, inconsistent, and hard to scale.  
-SmartDesk AI automates analysis for **sentiment**, **urgency**, and **category**, providing actionable insights locally.
+Manual ticket analysis is:
+
+- Time-consuming  
+- Inconsistent across analysts  
+- Hard to scale for large volumes  
+- Slow to generate insights  
+
+**Solution:** SmartDesk AI automates ticket processing, classification, and reporting—fully locally, no cloud costs.
+
+---
+## 📊 Results & Insights (Best Models Only)
+
+### **Sentiment Analysis – CatBoost**
+![CatBoost Confusion Matrix](reports/sentiment/sentiment_CatBoost_cm.png)  
+**Summary:** 60% Negative | 20% Positive | 20% Neutral  
+📄 [Full Report](reports/sentiment/sentiment_CatBoost_report.txt)
 
 ---
 
-## 🛠️ Technical Solution
-- Generates synthetic tickets using local LLMs  
-- Classifies tickets automatically (sentiment, urgency, category)  
-- Generates visualizations and reports  
-- Runs entirely locally  
+### **Urgency Analysis – Logistic Regression**
+![LogReg Confusion Matrix](reports/urgency/urgency_LogReg_cm.png)  
+**Summary:** Balanced across Low, Medium, High  
+📄 [Full Report](reports/urgency/urgency_LogReg_report.txt)
 
 ---
+
+### **Category Analysis – XGBoost**
+![XGBoost Confusion Matrix](reports/category/category_XGBoost_cm.png)  
+**Summary:** Balanced across all categories  
+📄 [Full Report](reports/category/category_XGBoost_report.txt)
+
 
 This project demonstrates:
 
@@ -130,22 +151,8 @@ gunicorn app:app --bind 0.0.0.0:$PORT
 
 Dockerfile handles dependencies + deployment.
 
-📊 Results & Insights
 
-Sentiment Distribution: 60% Negative, 20% Positive, 20% Neutral
 
-Urgency Distribution: Balanced across Low, Medium, High
-
-Best Models:
-
-Sentiment → CatBoost
-
-Urgency → Logistic Regression
-
-Category → XGBoost
-
-F1 Scores: 0.82 – 0.91 across tasks
-## 📊 Reports & Insights
 
 ### Sentiment Analysis
 ![Sentiment Distribution](reports/sentiment/sentiment_CatBoost_cm.png)
