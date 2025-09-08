@@ -41,6 +41,24 @@ Manual ticket analysis is:
 **Summary:** Balanced across all categories  
 📄 [Full Report](reports/category/category_XGBoost_report.txt)
 
+---
+
+### **Sample Ticket Predictions**
+
+| Ticket ID | Sentiment | Urgency | Category |
+|-----------|-----------|---------|----------|
+| 001       | Negative  | High    | Billing  |
+| 002       | Positive  | Low     | Tech     |
+| 003       | Neutral   | Medium  | Support  |
+
+---
+
+### **Benchmark & Evaluation**
+- F1 Scores: 0.82 – 0.91 across tasks 
+- [Sentiment Report – CatBoost](reports/sentiment/sentiment_CatBoost_report.txt)
+- [Urgency Report – Logistic Regression](reports/urgency/urgency_LogReg_report.txt)
+- [Category Report – XGBoost](reports/category/category_XGBoost_report.txt)
+- [Benchmark Results](Models/benchmark_results.csv)
 
 This project demonstrates:
 
@@ -98,26 +116,6 @@ Frameworks: Flask, Gunicorn
 
 Deployment: Docker, Render (Free Tier)
 
-📂 Project Structure
-SmartDesk-AI/
-├── app.py                  # Flask web app (dashboard + API)
-├── analyzed_tickets.csv    # Processed dataset
-├── models/                 # Saved best ML models (joblib)
-│   ├── sentiment_best.joblib
-│   ├── urgency_best.joblib
-│   └── category_best.joblib
-├── figures/                # Benchmark visualizations + confusion matrices
-│   ├── benchmark_f1_scores.png
-│   ├── sentiment_LogReg_cm.png
-│   └── ...
-├── templates/
-│   └── index.html          # Dashboard UI
-├── requirements.txt        # Python dependencies
-├── Dockerfile              # Container setup for deployment
-├── evaluation_report.md    # Benchmarking report
-├── benchmark_results.csv   # Tabular benchmark results
-└── README.md               # Project documentation
-
 ⚙️ Setup & Usage
 🔹 Run Locally
 # Clone repo
@@ -130,7 +128,7 @@ pip install -r requirements.txt
 # Run Flask app
 python app.py
 
-Access dashboard at 👉 http://127.0.0.1:5000
+Access dashboard at 👉 [Localhost Dashboard](http://127.0.0.1:5000)
 
 🔹 Run with Docker
 # Build image
@@ -152,31 +150,6 @@ gunicorn app:app --bind 0.0.0.0:$PORT
 Dockerfile handles dependencies + deployment.
 
 
-
-
-### Sentiment Analysis
-![Sentiment Distribution](reports/sentiment/sentiment_CatBoost_cm.png)
-Summary: 60% Negative, 20% Positive, 20% Neutral
-
-### Urgency Analysis
-![Urgency Distribution](reports/urgency/urgency_LogReg_cm.png)
-Balanced across Low, Medium, High
-
-### Category Analysis
-![Category Distribution](reports/category/category_CatBoost_cm.png)
-
-### Sample Ticket Predictions
-| Ticket ID | Sentiment | Urgency | Category |
-|-----------|-----------|---------|----------|
-| 001       | Negative  | High    | Billing  |
-| 002       | Positive  | Low     | Tech     |
-| 003       | Neutral   | Medium  | Support  |
-
-### Full Reports
-- [Sentiment Report](reports/sentiment)  
-- [Urgency Report](reports/urgency)  
-- [Category Report](reports/category)  
-- [Benchmark Results](Models/benchmark_results.csv)
 
 
 
