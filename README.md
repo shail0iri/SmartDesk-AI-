@@ -156,7 +156,7 @@ Summary: 60% Negative, 20% Positive, 20% Neutral
 Balanced across Low, Medium, High
 
 ### Category Analysis
-![Category Distribution](reports/category/category_distribution.png)
+![Category Distribution](reports/category/category_CatBoost_cm.png)
 
 ### Sample Ticket Predictions
 | Ticket ID | Sentiment | Urgency | Category |
