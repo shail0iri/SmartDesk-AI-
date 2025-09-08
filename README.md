@@ -55,7 +55,10 @@ Modeling → Using Ollama + DeepSeek R1 8B for intelligent analysis.
 Visualization → Insights generated with Matplotlib and Seaborn.
 
 Business Insights → Decision Making → Actionable outcomes for support teams.
-(figures/architecture.png)
+## 📊 End-to-End Architecture  
+
+![SmartDesk AI Architecture](figures/architecture.png)
+
 
 🌟 Featured Highlights
 
