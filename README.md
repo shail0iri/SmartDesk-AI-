@@ -147,7 +147,7 @@ F1 Scores: 0.82 – 0.91 across tasks
 ## 📊 Reports & Insights
 
 ### Sentiment Analysis
-![Sentiment Distribution](reports/sentiment/sentiment_distribution.png)
+![Sentiment Distribution](reports/sentiment/sentiment_CatBoost_cm.png)
 Summary: 60% Negative, 20% Positive, 20% Neutral
 
 ### Urgency Analysis
