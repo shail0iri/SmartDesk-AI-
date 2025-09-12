@@ -103,7 +103,4 @@ The following charts have been generated:
 - **Data Source:** 1136 synthetically generated customer support tickets
 - **Tools Used:** Python, Pandas, Matplotlib, Seaborn, Requests, Scipy
 
----
-
-*Report automatically generated using AI-powered analysis*  
-*This is a demonstration project for portfolio purposes*
+--- 
