@@ -1,6 +1,6 @@
 # SmartDesk AI– Intelligent Customer Support Ticket Analysis
 
-📌 **Overview**  
+ **Overview**  
 SmartDesk-AI is an end-to-end AI + Data pipeline for automated customer support ticket analysis, sentiment classification, and business intelligence reporting.  
 It demonstrates full-stack data science skills with local LLM integration.
 
@@ -9,7 +9,7 @@ It demonstrates full-stack data science skills with local LLM integration.
 
 ---
 
-## 🎯 Business Problem
+##  Business Problem
 Manual ticket analysis is:
 
 - Time-consuming  
@@ -20,7 +20,7 @@ Manual ticket analysis is:
 **Solution:** SmartDesk AI automates ticket processing, classification, and reporting—fully locally, no cloud costs.
 
 ---
-## 📊 Results & Insights (Best Models Only)
+##  Results & Insights (Best Models Only)
 
 ### **Sentiment Analysis – CatBoost**
 ![CatBoost Confusion Matrix](reports/sentiment/sentiment_CatBoost_cm.png)  
@@ -62,19 +62,19 @@ Manual ticket analysis is:
 
 # This project demonstrates:
 
-🧹 Data Cleaning & Preprocessing
+ Data Cleaning & Preprocessing
 
-🤖 Multi-task ML Models for Sentiment, Urgency, and Category classification
+ Multi-task ML Models for Sentiment, Urgency, and Category classification
 
-📊 Benchmarking across 6 ML algorithms (LogReg, Naive Bayes, RandomForest, SVM, XGBoost, CatBoost)
+ Benchmarking across 6 ML algorithms (LogReg, Naive Bayes, RandomForest, SVM, XGBoost, CatBoost)
 
-⚠️ Misclassification tracking for model improvement
+ Misclassification tracking for model improvement
 
-🌐 Interactive Flask Dashboard for visualization
+ Interactive Flask Dashboard for visualization
 
-🐳 Dockerized Deployment on Render Cloud
+ Dockerized Deployment on Render Cloud
 
-# 📊 End-to-End Architecture
+#  End-to-End Architecture
 
 This diagram illustrates the full flow of the project:
 
@@ -93,17 +93,17 @@ Business Insights → Decision Making → Actionable outcomes for support teams.
 ![SmartDesk AI Architecture](figures/architecture.png)
 
 
-# 🌟 Featured Highlights
+#  Featured Highlights
 
-🚀 Local AI Processing: Uses DeepSeek R1 8B via Ollama - no API costs!
+ Local AI Processing: Uses DeepSeek R1 8B via Ollama - no API costs!
 
-📊 Automated Analysis: Classifies sentiment, urgency, and categories automatically
+ Automated Analysis: Classifies sentiment, urgency, and categories automatically
 
-💡 Business Insights: Generates actionable reports and visualizations
+ Business Insights: Generates actionable reports and visualizations
 
-🔒 Data Privacy: Everything runs locally - no data leaves your machine
+ Data Privacy: Everything runs locally - no data leaves your machine
 
-⚡ Production Ready: Dockerized deployment and REST API endpoints
+ Production Ready: Dockerized deployment and REST API endpoints
 
 🛠️ Tech Stack
 
@@ -115,7 +115,7 @@ Frameworks: Flask, Gunicorn
 
 Deployment: Docker, Render (Free Tier)
 
-⚙️ Setup & Usage
+ Setup & Usage
 🔹 Run Locally
 # Clone repo
 git clone https://github.com/shail0iri/SmartDesk-AI-.git
@@ -123,11 +123,6 @@ cd SmartDesk-AI-
 
 # Install dependencies
 pip install -r requirements.txt
-
-# Run Flask app
-python app.py
-
-Access dashboard at 👉 [Localhost Dashboard]
 
 🔹 Run with Docker
 # Build image
