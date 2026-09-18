@@ -127,26 +127,13 @@ pip install -r requirements.txt
 # Run Flask app
 python app.py
 
-Access dashboard at 👉 [Localhost Dashboard](http://127.0.0.1:5000)
+Access dashboard at 👉 [Localhost Dashboard]
 
 🔹 Run with Docker
 # Build image
 docker build -t smartdesk-ai .
 
-# Run container
-docker run -p 8000:8000 smartdesk-ai
 
-Access at 👉 http://localhost:8000
-
-🔹 Deployment on Render
-
-Repo connected to Render
-
-Start command:
-
-gunicorn app:app --bind 0.0.0.0:$PORT
-
-Dockerfile handles dependencies + deployment.
 
 
 
