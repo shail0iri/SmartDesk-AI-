@@ -105,7 +105,7 @@ Business Insights → Decision Making → Actionable outcomes for support teams.
 
  Production Ready: Dockerized deployment and REST API endpoints
 
-🛠️ Tech Stack
+ Tech Stack
 
 Languages: Python 3.9
 
